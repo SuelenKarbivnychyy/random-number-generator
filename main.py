@@ -1,16 +1,16 @@
-import random
+import time
 
-class Number_generator:
+class Number_generate:
 
     def __init__(self):
         pass
 
-    def generator(self):
+    def generator(self, stop_number):
         """Generates a random number"""
+        
+        current_time = round(time.time()*1000)
+        print(f"The random generated number is: {current_time%stop_number}")       
 
-        generated_num = random.randint(1, 1000)
-        print(f"The number is {generated_num}")
+play = Number_generate()
 
-play = Number_generator()
-
-play.generator()
+play.generator(20)
