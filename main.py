@@ -1,6 +1,3 @@
-#TODO: Build a random number generator
-#Many languages contain classes that allow for the functionality of a random number generator, but we want you to create your own method that does this.
-
 import random
 
 class Number_generator:
@@ -9,9 +6,10 @@ class Number_generator:
         pass
 
     def generator(self):
-        """generates a random number"""
+        """Generates a random number"""
 
-        print(f"The number is {random.randint(range(1,1000))}")
+        generated_num = random.randint(1, 1000)
+        print(f"The number is {generated_num}")
 
 play = Number_generator()
 
